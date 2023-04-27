@@ -14,20 +14,35 @@
         <nav class="bg-gray-800">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-14 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden"></div>
+                <div class="absolute inset-y-0 left-0 flex justify-between sm:hidden"></div>
+                <!--BTC.now logo-->
+                <img 
+                src="/icons/btc-icon-removebg-preview.png"
+                style="height: 40px"
+                alt=""
+                loading="eager"
+                />
+                <!--Name of site-->
+                <p class="text-base decoration-8 text-white">BTC.now</p>
+                <!--Dark mode and light mode toggle-->
+                
                 <!--Mobile menu button-->
-                <button type="button" class="inline-flex items-center justify-center
-                rounded-md p-2 text-gray-300 hover:bg-gray-800 hover:text-white focus:outline-none
-                focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
+                <button type="button" class="flex justify-start 
+                rounded-lg p-2 text-gray-300 hover:bg-white-900 hover:text-white focus:outline-none
+                focus:ring-inset " aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">main menu</span>
             <!--
                 Icon when menu is closed.
 
                 Menu open: "hidden", Menu closed: "block"
             -->
-            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg xmlns="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
+            
+            <!--svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg-->
             <!--
                 Icon when menu is open.
 
@@ -38,6 +53,22 @@
             </svg>
             </button>
             </div>
+            <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">News</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Markets</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                </div>
+            </div>
+            <!--Menu dropdowns-->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">News</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Markets</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+                </div>
             </div>
         </nav>
     </header>
