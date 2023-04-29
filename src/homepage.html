@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <title>BTC.now</title>
-    <head>
-        <meta title="BTC.now" content="BTC.now">
-        <meta charset="UTF-8">
-        <meta name="description" content="BTC.now crypto news">
-        <meta name="author" content="Kester Odero">
-        <meta http-equiv="refresh" content="300">
-        <meta name="viewpoint" content="width=device:width, initial-scale=1.0">
-        <link href="/dist/output.css" rel="stylesheet">
-        <link href="/dist/grid.css" rel="stylesheet">
-    </head>
-    <header id ="navbar" class="bg-black">
-        <nav class="bg-gray-800">
-            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+<title>BTC.now</title>
+<link rel="icon" href="/icons/download-removebg-preview.png" type="ima
+    /png">
+
+<head>
+    <meta title="BTC.now" content="BTC.now">
+    <meta charset="UTF-8">
+    <meta name="description" content="BTC.now crypto news">
+    <meta name="author" content="Kester Odero">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewpoint" content="width=device:width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/grid.css" rel="stylesheet">
+</head>
+<header id="navbar" class="bg-black">
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-14 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex justify-between sm:hidden"></div>
                 <!--BTC.now logo-->
-                <img 
-                src="/icons/btc-icon-removebg-preview.png"
-                style="height: 40px"
-                alt=""
-                loading="eager"
-                />
+                <img src="/icons/btc-icon-removebg-preview.png" style="height: 40px" alt="" loading="eager" />
                 <!--Name of site-->
                 <p class="text-base decoration-8 text-white">BTC.now</p>
                 <!--Dark mode and light mode toggle-->
-                
+
                 <!--Mobile menu button-->
-                    <button type="button" class="flex justify-start rounded-lg p-2 text-gray-300 hover:bg-white-900 hover:text-white focus:outline-none focus:ring-inset focus:ring-white
-                    focus:ring-inset navbar-toggle" aria-label="Toggle menu" aria-controls="navbar-menu" aria-expanded="false">
-                        <span class="sr-only">main menu</span>
+                <button type="button" class="flex justify-start rounded-lg p-2 text-gray-300 hover:bg-white-900 hover:text-white focus:outline-none 
+                    focus:ring-inset focus:ring-white
+                    focus:ring-inset navbar-toggle" aria-label="Toggle menu" aria-controls="navbar-menu"
+                    aria-expanded="false">
+                    <span class="sr-only">main menu</span>
                     <!--
                     Icon when menu is closed.
                         Menu open: "hidden", Menu closed: "block"
                     -->
-                    <svg id="menu-closed" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <svg id="menu-closed" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                    
+
                     <!--
                         Icon when menu is open.
 
                         Menu open: "block", Menu closed: "hidden"
                     -->
-                    <svg id="menu-open" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <svg id="menu-open" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -52,34 +55,61 @@
             <div class="detached" id="navbar-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2 detached">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">News</a>
-                    <a href="https://finance.yahoo.com/crypto/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAKnFBUYG5KWK80YNYnevZ2WWCfRbA1twvN2jlpHkjHYLEdIfoC2j4ruaGq3iXy45oQy1NgqCknzDuUTNb-RVI_3c_pv0zLraSjUraRhzLi43gE0hIC-OhHehZ7hlvmzRbxVXyYAoccrbJHaR12JVOIZsb2JnGhXZqUiDbOaRCNqT" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Markets</a>
-                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                        aria-current="page">News</a>
+                    <a href="https://finance.yahoo.com/crypto/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAKnFBUYG5KWK80YNYnevZ2WWCfRbA1twvN2jlpHkjHYLEdIfoC2j4ruaGq3iXy45oQy1NgqCknzDuUTNb-RVI_3c_pv0zLraSjUraRhzLi43gE0hIC-OhHehZ7hlvmzRbxVXyYAoccrbJHaR12JVOIZsb2JnGhXZqUiDbOaRCNqT"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Markets</a>
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <body class="bg-white dark:bg-[#020617]">
-        <div class="parent">
-            <div class="div1">
-                <div class="div9"> </div>
-                <div class="div10"> </div>
-                <div class="div11"> </div>
-                <div class="div12"> </div>
-                <div class="div13"> </div>
-            </div>
-            
-            <div class="div2"></div>
-            <div class="div3"><p>Test 3</p> </div>
-            <div class="div4"><p>Test 4</p> </div>
-            <div class="div5"><p>Test 5</p> </div>
-            <div class="div6"><p>Test 6</p> </div>
-            <div class="div7"><p>Test 7</p> </div>
-            <div class="div8"><p>Test 8</p> </div>
-            </div>
-    </body>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <footer>
+    </nav>
+</header>
 
-    </footer>
+<body class="bg-white dark:bg-[#020617]">
+    <div class="parent">
+        <div class="div1">
+            <div class="div9"> </div>
+            <div class="div10"> </div>
+            <div class="div11"> </div>
+            <div class="div12"> </div>
+            <div class="div13"> </div>
+        </div>
+        <div class="div2">
+            <!--Implementing image caroussel-->
+            <div id="CarouselForLatestNews" 
+            class="relative" data-te-carousel-init data-te-carousel-slide>
+            <!--Carousel indicators-->
+            <button type="button" data-te-target="#CarouselForLatestNews"
+            data-te-slide-to="0"
+            data-te-carousel-active
+            class="mx-[3px] "
+            ></button>
+            </div>
+        </div>
+        <div class="div3">
+            <p>Test 3</p>
+        </div>
+        <div class="div4">
+            <p>Test 4</p>
+        </div>
+        <div class="div5">
+            <p>Test 5</p>
+        </div>
+        <div class="div6">
+            <p>Test 6</p>
+        </div>
+        <div class="div7">
+            <p>Test 7</p>
+        </div>
+        <div class="div8">
+            <p>Test 8</p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<footer>
+
+</footer>
+
 </html>

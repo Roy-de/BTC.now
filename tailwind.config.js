@@ -1,4 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+import{
+    Carousel,
+    initTE,
+}
+from "tw-elements";
+initTE({Carousel});
+
 module.exports = {
     darkMode: 'class',
     content: ["./src/**/*.{html,js}"],
