@@ -41,7 +41,10 @@ module.exports = {
             },
             borderRadius: {
                 '4xl': '2rem',
-            }
+            },
+            fontFamily: {
+                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            },
         },
     },
     plugins: [],

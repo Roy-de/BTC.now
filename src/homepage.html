@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>BTC.now</title>
+<title>BTC.now - Get latest news</title>
 <link rel="icon" href="/icons/download-removebg-preview.png" type="ima
     /png">
 
@@ -8,11 +8,15 @@
     <meta title="BTC.now" content="BTC.now">
     <meta charset="UTF-8">
     <meta name="description" content="BTC.now crypto news">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="author" content="Kester Odero">
     <meta http-equiv="refresh" content="300">
     <meta name="viewpoint" content="width=device:width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <link href="/dist/grid.css" rel="stylesheet">
+    <!--Flowbite css link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <header id="navbar" class="bg-black">
     <nav class="bg-gray-800">
@@ -59,33 +63,142 @@
                         aria-current="page">News</a>
                     <a href="https://finance.yahoo.com/crypto/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAKnFBUYG5KWK80YNYnevZ2WWCfRbA1twvN2jlpHkjHYLEdIfoC2j4ruaGq3iXy45oQy1NgqCknzDuUTNb-RVI_3c_pv0zLraSjUraRhzLi43gE0hIC-OhHehZ7hlvmzRbxVXyYAoccrbJHaR12JVOIZsb2JnGhXZqUiDbOaRCNqT"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Markets</a>
-                    <a href="#"
+                    <a href="/footer"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
                 </div>
             </div>
     </nav>
 </header>
 
-<body class="bg-white dark:bg-[#020617]">
+<body class="bg-white dark:bg-grey-800">
     <div class="parent">
-        <div class="div1">
-            <div class="div9"> </div>
-            <div class="div10"> </div>
-            <div class="div11"> </div>
-            <div class="div12"> </div>
-            <div class="div13"> </div>
-        </div>
-        <div class="div2">
-            <!--Implementing image caroussel-->
-            <div id="CarouselForLatestNews" 
-            class="relative" data-te-carousel-init data-te-carousel-slide>
-            <!--Carousel indicators-->
-            <button type="button" data-te-target="#CarouselForLatestNews"
-            data-te-slide-to="0"
-            data-te-carousel-active
-            class="mx-[3px] "
-            ></button>
+        <div class="div1 grid grid-cols-4 gap-4">
+            <div class="div9">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
+                                    class="crypto-price-card__image"></span><span
+                                class="crypto-price-card__name">Bitcoin</span><span
+                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
             </div>
+            <div class="div10 justify-center">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
+                                    class="crypto-price-card__image"></span><span
+                                class="crypto-price-card__name">Bitcoin</span><span
+                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>
+            <div class="div11">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
+                                    class="crypto-price-card__image"></span><span
+                                class="crypto-price-card__name">Bitcoin</span><span
+                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>
+            <div class="div12">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="/icons/bitcoin.png" width="40" height="40" alt="BTC"
+                                    ></span><span
+                                class="crypto-price-card__name">Bitcoin</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>
+        </div>
+        <div class="div2 flex mb-10">
+            <!--Implementing image caroussel-->
+
+            <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="/icons/images/novalabnd_by_rajanandepu_defv5am-350t.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/icons/images/lost_in_between_by_aenami_dejc5ut-250t.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/icons/images/on_the_cave__concept_art__by_subhasporsho_delbzsm-350t.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/icons/images/prompt_day_2___nature_untouched_by_tiagoaleixo_des23qv-350t.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/icons/images/the_path_of_the_monolith__sea_by_kristyglas_debmmgf-350t.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-white" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
         </div>
         <div class="div3">
             <p>Test 3</p>
@@ -107,6 +220,7 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <footer>
 
