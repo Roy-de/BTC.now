@@ -38,8 +38,3 @@
             dots[slideIndex - 1].classList.remove('bg-green-600');
             dots[slideIndex - 1].classList.add('bg-yellow-500');
         }
-
-import{
-    Carousel,
-    ini
-}
