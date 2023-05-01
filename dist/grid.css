@@ -23,3 +23,15 @@
     .div15 { grid-area: 4 / 4 / 5 / 6; }
     .div16 { grid-area: 4 / 4 / 6 / 5; }
     .div17 { grid-area: 4 / 4 / 6 / 6; }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+/*marquee*/
+    
