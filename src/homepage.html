@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 <title>BTC.now - Get latest news</title>
 <link rel="icon" href="/icons/download-removebg-preview.png" type="ima
     /png">
@@ -26,7 +26,7 @@
                 <!--BTC.now logo-->
                 <img src="/icons/btc-icon-removebg-preview.png" style="height: 40px" alt="" loading="eager" />
                 <!--Name of site-->
-                <p class="text-base decoration-8 text-white">BTC.now</p>
+                <p class="text-base decoration-8 text-white font-mono antialiased hover:subpixel-antialiased font-bold">BTC.now</p>
                 <!--Dark mode and light mode toggle-->
 
                 <!--Mobile menu button-->
@@ -69,155 +69,52 @@
             </div>
     </nav>
 </header>
-
-<body class="bg-white dark:bg-grey-800">
-    <div class="parent">
-        <div class="div1 grid grid-cols-4 gap-4">
-            <div class="div9">
-                <div class="swiper-slide swiper-slide-prev">
-                    <div class="crypto-price-card">
-                        <div
-                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                            <span class="crypto-price-card__icon"><img
-                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
-                                    class="crypto-price-card__image"></span><span
-                                class="crypto-price-card__name">Bitcoin</span><span
-                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
-                    </div><!-- .crypto-price-card --><!--v-if-->
-                </div>
-            </div>
-            <div class="div10 justify-center">
-                <div class="swiper-slide swiper-slide-prev">
-                    <div class="crypto-price-card">
-                        <div
-                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                            <span class="crypto-price-card__icon"><img
-                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
-                                    class="crypto-price-card__image"></span><span
-                                class="crypto-price-card__name">Bitcoin</span><span
-                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
-                    </div><!-- .crypto-price-card --><!--v-if-->
-                </div>
-            </div>
-            <div class="div11">
-                <div class="swiper-slide swiper-slide-prev">
-                    <div class="crypto-price-card">
-                        <div
-                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                            <span class="crypto-price-card__icon"><img
-                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
-                                    class="crypto-price-card__image"></span><span
-                                class="crypto-price-card__name">Bitcoin</span><span
-                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
-                    </div><!-- .crypto-price-card --><!--v-if-->
-                </div>
-            </div>
-            <div class="div12">
-                <div class="swiper-slide swiper-slide-prev">
-                    <div class="crypto-price-card">
-                        <div
-                            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                            <span class="crypto-price-card__icon"><img
-                                    src="/icons/bitcoin.png" width="40" height="40" alt="BTC"
-                                    ></span><span
-                                class="crypto-price-card__name">Bitcoin</span></div><!-- .crypto-price-card__header -->
-                    </div><!-- .crypto-price-card --><!--v-if-->
+<body>
+    <div class="grid grid-cols-3 gap-6 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 pl-2 pr-2 pt-2">
+        <div class="bg-gray-700 rounded p-4 col-span-5">
+            <!--Within this div class, the crypto cards should marquee-->
+            <div class="relative flex overflow-x-hidden">
+                <div class="py-4 animate-marquee2 whitespace-nowrap">
+                    
                 </div>
             </div>
         </div>
-        <div class="div2 flex mb-10">
-            <!--Implementing image caroussel-->
-
-            <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="/icons/images/novalabnd_by_rajanandepu_defv5am-350t.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/icons/images/lost_in_between_by_aenami_dejc5ut-250t.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/icons/images/on_the_cave__concept_art__by_subhasporsho_delbzsm-350t.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/icons/images/prompt_day_2___nature_untouched_by_tiagoaleixo_des23qv-350t.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/icons/images/the_path_of_the_monolith__sea_by_kristyglas_debmmgf-350t.png"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                        data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                        data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                        data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                        data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                        data-carousel-slide-to="4"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button"
-                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
-                    data-carousel-prev>
-                    <span
-                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                            </path>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button"
-                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                    <span
-                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-white" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+        <div class="bg-gray-700 rounded p-4 row-span-3 col-span-3">
+            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
             </div>
+        </div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1">
 
         </div>
-        <div class="div3">
-            <p>Test 3</p>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="row-span-2 col-span-3">
+            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
         </div>
-        <div class="div4">
-            <p>Test 4</p>
-        </div>
-        <div class="div5">
-            <p>Test 5</p>
-        </div>
-        <div class="div6">
-            <p>Test 6</p>
-        </div>
-        <div class="div7">
-            <p>Test 7</p>
-        </div>
-        <div class="div8">
-            <p>Test 8</p>
-        </div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
+        <div class="bg-gray-700 rounded p-4 row-span-1 col-span-1"></div>
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>

@@ -1,0 +1,53 @@
+<div class="parent grid grid-flow-row-dense">
+        <div class="div1 grid grid-cols-4 gap-4">
+            <div class="div9 pt-6">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm pt-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
+                                    class="crypto-price-card__image"></span><span
+                                class="crypto-price-card__name">Bitcoin</span><span
+                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>
+            <div class="div10 pt-6">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm pt-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
+                                    class="crypto-price-card__image"></span><span
+                                class="crypto-price-card__name">Bitcoin</span><span
+                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>
+            <div class="div11 pt-6">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm pt-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="https://crypto.news/images/icons/bitcoin.svg" width="40" height="40" alt="BTC"
+                                    class="crypto-price-card__image"></span><span
+                                class="crypto-price-card__name">Bitcoin</span><span
+                                class="crypto-price-card__symbol">BTC</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>
+            <div class="div12 pt-6">
+                <div class="swiper-slide swiper-slide-prev">
+                    <div class="crypto-price-card">
+                        <div
+                            class="block max-w-sm pt-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <span class="crypto-price-card__icon"><img
+                                    src="/icons/bitcoin.png" width="40" height="40" alt="BTC"
+                                    ></span><span
+                                class="crypto-price-card__name">Bitcoin</span></div><!-- .crypto-price-card__header -->
+                    </div><!-- .crypto-price-card --><!--v-if-->
+                </div>
+            </div>

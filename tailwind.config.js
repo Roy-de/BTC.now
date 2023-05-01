@@ -1,28 +1,29 @@
 /** @type {import('tailwindcss').Config} */
-import{
+import {
     Carousel,
     initTE,
 }
-from "tw-elements";
-initTE({Carousel});
+    from "tw-elements";
+initTE({ Carousel });
 
 module.exports = {
+    mode: 'jit',
     darkMode: 'class',
     content: ["./src/**/*.{html,js}"],
     theme: {
-        screens:{
+        screens: {
             'sm': '6400px',
             'md': '768px',
             'lg': '1024px',
-            'xl':'1280px',
+            'xl': '1280px',
             '2xl': '1536px',
         },
-        borderRadius:{
+        borderRadius: {
             'none': '0',
             DEFAULT: '0.25rem',
             'large': '12px',
         },
-        colors:{
+        colors: {
             transparent: 'transparent',
             current: 'currentColor',
             'white': '#ffffff',
@@ -45,7 +46,21 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
+            animation: {
+                marquee: 'marquee 25s linear infinite',
+                marquee2: 'marquee2 25s linear infinite',
+            },
+            keyframes: {
+                marquee: {
+                    '0%': { transform: 'translateX(0%)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                },
+                marquee2: {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(0%)' },
+                },
+            },
         },
     },
     plugins: [],
-    }
+}
