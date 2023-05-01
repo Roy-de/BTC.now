@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-import {
-    Carousel,
-    initTE,
-}
-    from "tw-elements";
-initTE({ Carousel });
+import { Carousel } from 'flowbite';
+
+const carousel = new Carousel(items, options);
 
 module.exports = {
     mode: 'jit',
     darkMode: 'class',
-    content: ["./src/**/*.{html,js}"],
+    content: ["./src/**/*.{html,js}",
+            "./node_modules/flowbite/**/*.js"],
     theme: {
         screens: {
             'sm': '6400px',
@@ -34,6 +32,7 @@ module.exports = {
             'silver': '#ecebff',
             'bubble-gum': '#ff77e9',
             'bermuda': '#78dcca',
+            'gold': '#ffbf00',
         },
         extend: {
             spacing: {
@@ -62,5 +61,7 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require('flowbite/plugin')
+    ],
 }
